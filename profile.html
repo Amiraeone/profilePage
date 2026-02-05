@@ -1,0 +1,1500 @@
+<!doctype html>
+<html lang="fa"
+      dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+  <!-- reference bootstrap icons cdn -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <!-- reference tailwindcss@3.3.2 cdn link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- reference tailwindcss@3.3.2 -->
+  <link rel="stylesheet"
+        href="./build/css/output.css" />
+  <!-- reference bootstrap@5.3.0 rtl style link-->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o"
+        crossorigin="anonymous" />
+  <!-- reference vazir font cdn -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css"
+        rel="stylesheet"
+        type="text/css" />
+  <!-- reference swiper css CDN -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- reference css style file -->
+  <link rel="stylesheet"
+        href="./build/css/style.css" />
+  <!-- reference responsive css file -->
+  <link rel="stylesheet"
+        href="./build/css/responsive.css" />
+  <!-- set favicon -->
+  <link rel="shortcut icon"
+        href="build/img/logo.png"
+        type="image/svg" />
+  <!-- set title bar -->
+  <title>پروفایل</title>
+</head>
+
+<body class="flex justify-center items-center relative h-screen max-sm:h-[initial] bg-[#292935]">
+  <div
+       class="flex max-[870px]:flex-col w-[1000px] h-[600px] sm:max-[870px]:h-screen max-sm:h-[1060px] relative overflow-hidden max-sm:overflow-y-scroll rounded-[1rem] max-[870px]:rounded-none shadow-[0px_0px_17px_0px_black]">
+    <!-- start side profile -->
+    <div
+         class="flex flex-col sm:max-[870px]:flex-row justify-center relative w-3/12 max-[870px]:w-full h-full max-[870px]:h-3/12 max-sm:h-[35%]">
+      <div
+           class="flex justify-end max-sm:justify-center max-sm:items-center w-full h-1/3 max-[870px]:h-full max-sm:h-28">
+        <div class="flex items-end sm:max-[870px]:items-center max-sm:justify-center w-3/4 h-full max-sm:h-36">
+          <!-- img profile -->
+          <div
+               class="w-32 max-[870px]:w-[7.5rem] max-sm:w-28 h-32 max-[870px]:h-[7.5rem] max-sm:h-28 overflow-hidden rounded-circle border-3 border-[#7f7f7f]">
+            <img class="w-full h-full object-cover"
+                 src="./build/img/profile.jpg"
+                 alt
+                 draggable="false" />
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-end max-sm:justify-center w-full h-1/3 sm:max-[870px]:h-full max-sm:h-[77px]">
+        <div class="flex flex-col justify-center max-sm:items-center gap-2 w-3/4 h-full max-sm:h-36">
+          <p class="text-white text-3xl font-extrabold">amir_007</p>
+          <p class="max-sm:hidden text-white-50">09920000000</p>
+          <p class="max-sm:hidden text-white-50 text-sm">
+            ایران,اذربایجان شرقی,مراغه
+          </p>
+        </div>
+      </div>
+      <div class="flex justify-end max-sm:justify-center w-full h-1/3 sm:max-[870px]:h-full max-sm:mb-5">
+        <!-- start profile main menu -->
+        <div
+             class="flex flex-col justify-start max-[870px]:justify-center max-sm:items-center gap-2.5 min-[870px]:relative w-3/4 h-full max-sm:h-36">
+          <button class="main-menu-item relative outline-none text-right text-white-50"
+                  id="profile-information">
+            <i class="bi bi-circle-fill absolute -right-4 top-1 max-sm:!hidden text-white-50 text-[10px]"></i>اطلاعات
+            حساب کاربری
+          </button>
+          <button class="main-menu-item relative outline-none text-right text-white"
+                  id="profile-saves">
+            <i class="bi bi-circle-fill absolute -right-4 top-1 max-sm:!hidden text-white text-[10px]"></i>ذخیره
+            شده ها
+          </button>
+          <button class="main-menu-item relative outline-none text-right text-white"
+                  id="profile-orders">
+            <i class="bi bi-circle-fill absolute -right-4 top-1 max-sm:!hidden text-white text-[10px]"></i>سفارشات
+          </button>
+          <a href
+             class="absolute min-[870px]:static max-[870px]:top-4 max-[870px]:right-4 text-white text-sm max-[375px]:text-xs">خروج
+            از حساب&nbsp;&nbsp;<i class="bi bi-box-arrow-left text-danger text-lg align-[-4px]"></i></a>
+        </div>
+        <!-- end profile main menu  -->
+      </div>
+    </div>
+    <!-- end side profile -->
+    <!-- start account information section -->
+    <section class="profile-content flex justify-center items-center w-3/4 max-[870px]:w-full h-full max-[870px]:h-3/4 max-sm:h-[715px] px-1.5 max-[870px]:p-[9px]"
+             id="profile-information">
+      <div
+           class="flex flex-col justify-around sm:max-md:justify-start items-center w-[670px] max-[870px]:w-full h-[470px] max-sm:h-full p-[5px_10px] sm:max-[870px]:py-[15px] max-sm:pt-3 sm:max-[870px]:overflow-scroll rounded-4 bg-[#1f2f4b]">
+        <div class="row w-full h-1/5 max-md:h-[initial]">
+          <form action
+                method="post"
+                class="col-sm-12 col-md-6 flex flex-col justify-center gap-1.5 max-sm:mt-1">
+            <label for="name"
+                   class="text-white">نام و نام خانوادگی</label>
+            <div class="flex w-full">
+              <div class="w-full">
+                <input type="text"
+                       class="w-full outline-none text-white bg-transparent"
+                       id="name"
+                      value="امیرحسن صادقی"
+                       disabled />
+                <div class="h-0.5 w-0 bg-white duration-1000"></div>
+              </div>
+              <label for="name">
+                <i class="bi bi-plus-lg edit-input-icon mt-1 cursor-pointer text-white text-1xl"
+                   id="name"></i>
+              </label>
+            </div>
+          </form>
+          <form action
+                method="post"
+                class="col-sm-12 col-md-6 flex flex-col justify-center gap-1.5 max-sm:mt-1">
+            <label for="national-code"
+                   class="text-white">کد ملی</label>
+            <div class="flex w-full">
+              <div class="w-full">
+                <input type="text"
+                       class="w-full outline-none text-white bg-transparent"
+                       id="national-code"
+                       value="1540755556"
+                       maxlength="16"
+                       disabled />
+                <div class="h-0.5 w-0 duration-1000 bg-white"></div>
+              </div>
+              <label for="national-code">
+                <i class="bi bi-plus-lg edit-input-icon mt-1 cursor-pointer text-white text-1xl"
+                   id="national-code"></i>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="row w-full h-1/5 max-md:h-[initial]">
+          <form action
+                method="post"
+                class="col-sm-12 col-md-6 flex flex-col justify-center gap-1.5 max-sm:mt-1">
+            <label for="phone-number"
+                   class="text-white">شماره موبایل</label>
+            <div class="flex w-full">
+              <div class="w-full">
+                <input type="text"
+                       class="w-full outline-none text-white bg-transparent"
+                       id="phone-number"
+                       value="09366666688"
+                       maxlength="11"
+                       disabled />
+                <div class="h-0.5 w-0 duration-1000 bg-white"></div>
+              </div>
+              <label for="phone-number">
+                <i class="bi bi-plus-lg edit-input-icon mt-1 cursor-pointer text-white text-1xl"
+                   id="phone-number"></i>
+              </label>
+            </div>
+          </form>
+          <form action
+                method="post"
+                class="col-sm-12 col-md-6 flex flex-col justify-center gap-1.5 max-sm:mt-1">
+            <label for="birth-date"
+                   class="text-white">تاریخ تولد</label>
+            <div class="flex w-full">
+              <div class="w-full">
+                <input type="text"
+                       class="w-full outline-none text-white bg-transparent"
+                       id="birth-date"
+                       value="02/10/2006"
+                       disabled />
+                <div class="h-0.5 w-0 duration-1000 bg-white"></div>
+              </div>
+              <label for="birth-date">
+                <i class="bi bi-plus-lg edit-input-icon mt-1 cursor-pointer text-white text-1xl"
+                   id="birth-date"></i>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="row w-full h-1/5 max-md:h-[initial]">
+          <form action
+                method="post"
+                class="col-sm-12 col-md-6 flex flex-col justify-center gap-1.5 max-sm:mt-1">
+            <label for="username"
+                   class="text-white">نام کاربری</label>
+            <div class="flex w-full">
+              <div class="w-full">
+                <input type="text"
+                       class="w-full outline-none text-white bg-transparent"
+                       id="username"
+                       value="amir_007"
+                       disabled />
+                <div class="h-0.5 w-0 duration-1000 bg-white"></div>
+              </div>
+              <label for="username">
+                <i class="bi bi-plus-lg edit-input-icon mt-1 cursor-pointer text-white text-1xl"
+                   id="username"></i>
+              </label>
+            </div>
+          </form>
+          <form action
+                method="post"
+                class="col-sm-12 col-md-6 flex flex-col justify-center gap-1.5 max-sm:mt-1">
+            <label for="Address"
+                   class="text-white">ادرس</label>
+            <div class="flex w-full">
+              <div class="w-full">
+                <input type="text"
+                       class="w-full outline-none text-white bg-transparent"
+                       id="Address"
+                       disabled />
+                <div class="h-0.5 w-0 duration-1000 bg-white"></div>
+              </div>
+              <label for="Address">
+                <i class="bi bi-plus-lg edit-input-icon mt-1 cursor-pointer text-white text-1xl"
+                   id="Address"></i>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="row w-full h-1/5 max-md:h-[initial]">
+          <form action
+                method="post"
+                class="col-sm-12 col-md-6 flex flex-col justify-center gap-1.5 max-sm:mt-1">
+            <label for="email"
+                   class="text-white">ایمیل</label>
+            <div class="flex w-full">
+              <div class="w-full">
+                <input type="text"
+                       class="w-full outline-none text-white bg-transparent"
+                       id="email"
+                       value="amir_007@gmail.com"
+                       disabled />
+                <div class="h-0.5 w-0 duration-1000 bg-white"></div>
+              </div>
+              <label for="email">
+                <i class="bi bi-plus-lg edit-input-icon mt-1 cursor-pointer text-white text-1xl"
+                   id="email"></i>
+              </label>
+            </div>
+          </form>
+          <form action
+                method="post"
+                class="col-sm-12 col-md-6 flex flex-col justify-center gap-1.5 max-sm:mt-1">
+            <label for="password"
+                   class="text-white">رمز عبور</label>
+            <div class="flex w-full">
+              <div class="w-full">
+                <input type="password"
+                       class="w-full outline-none text-white bg-transparent"
+                       id="password"
+                       value="1w285&%679aasW@3"
+                       disabled />
+                <div class="h-0.5 w-0 duration-1000 bg-white"></div>
+              </div>
+              <label for="password">
+                <i class="bi bi-plus-lg edit-input-icon mt-1 cursor-pointer text-white text-1xl"
+                   id="password"></i>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="flex items-center h-1/5 w-full border-t-2 border-slate-500 pr-1">
+          <ul class="flex flex-col justify-start w-full h-4/5 list-inside list-disc">
+            <li class="text-white">لطفا اطلاعات کاربری خود را تکمیل کنید.</li>
+            <li class="text-white">آدرس خود را بصورت دقیق وارد کنید.</li>
+            <li class="text-white">ایمیل در دسترس خود را وارد کنید.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- end !-->
+    <!-- start Stored products section -->
+    <section class="profile-content hidden justify-center items-center relative w-3/4 max-[870px]:w-full h-full max-[870px]:h-3/4 max-sm:h-[715px] max-[870px]:p-[9px]"
+             id="profile-saves">
+      <div
+           class="container-fluid flex justify-center max-[870px]:justify-start items-center w-[670px] max-[870px]:w-full h-[470px] max-sm:h-full sm:max-[870px]:py-[15px] max-sm:pt-3 sm:max-[870px]:overflow-scroll rounded-4 bg-[#1f2f4b]">
+        <div class="flex justify-center items-start w-full h-[88%] flex-wrap max-sm:h-[95%] overflow-y-auto">
+          <div class="flex flex-col justify-start items-center gap-[12px] max-sm:gap-2.5 w-full pt-1">
+            <div
+                 class="flex justify-between items-center relative group w-11/12 h-14 pr-3 rounded-3 overflow-hidden shadow-[1px_4px_18px_#212529ed] bg-[#283958]">
+              <p class="text-white text-lg max-sm:text-md">ذخیره شده ها</p>
+              <div
+                   class="edit flex justify-center items-center absolute max-[870px]:left-[17%] left-0 min-[870px]:group-hover:left-[15%] w-[15%] h-full sm:group-hover:transition-all transition-all">
+                <a class="cursor-pointer font-bold text-[#0099ff]">ویرایش</a>
+              </div>
+              <div
+                   class="del flex justify-center items-center w-[15%] h-full cursor-pointer sm:group-hover:transition-all transition-all sm:group-hover:bg-[rgb(220,53,69)] hover:bg-[rgb(220,53,69)] group-hover:shadow-[5px_0_20px_#000000] max-[870px]:shadow-[5px_0_20px_#000000] z-10 text-white bg-[#0099ff]">
+                حذف
+              </div>
+            </div>
+            <div
+                 class="flex justify-between items-center relative group w-11/12 h-14 pr-3 rounded-3 overflow-hidden shadow-[1px_4px_18px_#212529ed] bg-[#283958]">
+              <p class="text-white text-lg max-sm:text-md">گیمینگ</p>
+              <div
+                   class="edit flex justify-center items-center absolute max-[870px]:left-[17%] left-0 min-[870px]:group-hover:left-[15%] w-[15%] h-full sm:group-hover:transition-all transition-all">
+                <a class="cursor-pointer font-bold text-[#0099ff]">ویرایش</a>
+              </div>
+              <div
+                   class="del flex justify-center items-center w-[15%] h-full cursor-pointer sm:group-hover:transition-all transition-all sm:group-hover:bg-[rgb(220,53,69)] hover:bg-[rgb(220,53,69)] group-hover:shadow-[5px_0_20px_#000000] max-[870px]:shadow-[5px_0_20px_#000000] z-10 text-white bg-[#0099ff]">
+                حذف
+              </div>
+            </div>
+            <div
+                 class="flex justify-between items-center relative group w-11/12 h-14 pr-3 rounded-3 overflow-hidden shadow-[1px_4px_18px_#212529ed] bg-[#283958]">
+              <p class="text-white text-lg max-sm:text-md">موبایل</p>
+              <div
+                   class="edit flex justify-center items-center absolute max-[870px]:left-[17%] left-0 min-[870px]:group-hover:left-[15%] w-[15%] h-full sm:group-hover:transition-all transition-all">
+                <a class="cursor-pointer font-bold text-[#0099ff]">ویرایش</a>
+              </div>
+              <div
+                   class="del flex justify-center items-center w-[15%] h-full cursor-pointer sm:group-hover:transition-all transition-all sm:group-hover:bg-[rgb(220,53,69)] hover:bg-[rgb(220,53,69)] group-hover:shadow-[5px_0_20px_#000000] max-[870px]:shadow-[5px_0_20px_#000000] z-10 text-white bg-[#0099ff]">
+                حذف
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Stored products section -->
+    <!-- start orders section -->
+    <section class="profile-content hidden justify-center items-center relative w-3/4 max-[870px]:w-full h-full max-[870px]:h-3/4 max-sm:h-[710px] max-[870px]:p-[9px]"
+             id="profile-orders">
+      <div
+           class="container-fluid flex flex-col justify-center max-[870px]:justify-start items-center w-[670px] max-[870px]:w-full h-[470px] max-sm:h-full sm:max-[870px]:py-[15px] max-sm:pt-3 sm:max-[870px]:overflow-scroll rounded-4 bg-[#1f2f4b]">
+        <div class="relative w-11/12 max-sm:w-full h-[420px] max-sm:h-[98%] z-0 overflow-hidden">
+          <div class="orders-page-menu-btn hidden max-sm:flex justify-center items-center relative w-10 h-10 mb-2 z-3">
+            <i class="bi bi-grid text-white text-lg"></i>
+          </div>
+          <!-- start orders menu -->
+          <div
+               class="orders-menu flex justify-start items-center max-sm:absolute -top-40 w-full h-10 max-sm:h-40 duration-[1s] sm:mb-2 max-sm:px-2.5 rounded-2 max-[870px]:shadow-md max-sm:opacity-0 z-20 max-sm:bg-[#34425a]">
+            <ul class="flex max-sm:flex-col max-sm:justify-evenly gap-[0.75rem] w-full max-sm:h-full max-sm:p-1.5">
+              <li class="order-menu-item flex justify-between sm:gap-2 cursor-pointer text-[#7B74FF] max-sm:text-sm">
+                جاری
+                <p class="orders-page-menu-items h-5 p-[1px_6px_0px_6px] rounded-md text-white !bg-[#7B74FF]">
+                  0
+                </p>
+              </li>
+              <li class="order-menu-item flex justify-between sm:gap-2 cursor-pointer text-white max-sm:text-sm">
+                تحویل داده شده
+                <p class="orders-page-menu-items h-5 p-[1px_6px_0px_6px] rounded-md text-white bg-[#999999]">
+                  0
+                </p>
+              </li>
+              <li class="order-menu-item flex justify-between sm:gap-2 cursor-pointer text-white max-sm:text-sm">
+                مرجوع شده
+                <p class="orders-page-menu-items h-5 p-[1px_6px_0px_6px] rounded-md text-white bg-[#999999]">
+                  0
+                </p>
+              </li>
+              <li class="order-menu-item flex justify-between sm:gap-2 cursor-pointer text-white max-sm:text-sm">
+                لغو شده
+                <p class="orders-page-menu-items h-5 p-[1px_6px_0px_6px] rounded-md text-white bg-[#999999]">
+                  0
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- end orders menu -->
+          <!-- start current products of orders section -->
+          <div class="orders-pages swiper flex justify-center items-start !static w-full h-[86%] max-sm:h-[92%] overflow-x-auto"
+               id="Current">
+            <div class="swiper-wrapper flex flex-col flex-wrap justify-start items-center w-full h-full">
+              <div class="swiper-slide flex flex-col justify-start items-center w-full h-full">
+                <div class="flex flex-col justify-between max-sm:justify-evenly relative w-full h-[35%] max-sm:h-[10%]">
+                  <div class="max-sm:hidden flex flex-row items-start gap-4 w-full h-1/4">
+                    <p class="max-sm:hidden text-white text-sm">
+                      وضعیت ارسال:
+                    </p>
+                    <!-- <p class="max-sm:hidden text-white text-sm">ثبت سفارش</p> -->
+                    <p class="max-sm:hidden text-white text-sm">خروج از انبار</p>
+                    <!-- <p class="max-sm:hidden text-white text-sm">
+                      تحویل به اداره پست
+                    </p> -->
+                    <p class="max-sm:hidden text-white text-sm">
+                      <i class="bi bi-calendar4-event rotate-180 text-sm"></i>&nbsp;&nbsp;1402
+                      فروردین 15
+                    </p>
+                  </div>
+                  <div class="flex flex-row justify-center w-full h-3/5 max-sm:h-3/4">
+                    <div class="hidden max-sm:flex justify-center items-center w-full h-full p-2.5 rounded-3 bg-[#464766]"
+                         onclick="openPartsSidebar(this)">
+                      <p class="hidden max-sm:block text-white text-xl">
+                        مشاهده مراحل تحویل کالا
+                      </p>
+                    </div>
+                    <div class="hidden fixed w-full h-full backdrop-blur-[2px] z-50">
+                      <div class="w-9/12 h-full rounded-md bg-[#464766]">
+                        <div class="flex justify-between items-center h-[10%] border-b-2 px-2 border-gray-500">
+                          <h5 class="text-white">مراحل تحویل کالا</h5>
+                          <div class="text-white text-lg"
+                               onclick="closePartsSidebar(this)">
+                            <i class="bi bi-x-circle"></i>
+                          </div>
+                        </div>
+                        <div class="flex justify-center items-center h-[90%] p-2">
+                          <div class="w-1.5 h-[27rem] relative left-8 bg-[rgba(255,255,255,0.1)]">
+                            <span class="flex flex-col justify-center absolute -top-px left-[-4px] w-3.5 h-3.5 rounded-full border-2 border-[#34d399] bg-emerald-400"
+                                  data-bs-placement="left"
+                                  data-bs-toggle="popover">
+                              <span
+                                    class="popover flex justify-center absolute right-6 before:content-[''] before:block before:absolute before:-right-1 before:top-2 before:w-2.5 before:h-2.5 before:bg-[#212529] before:rotate-45 w-[5.2rem] h-7 rounded-sm text-center text-white bg-[#212529]">ثبت</span>
+                            </span>
+                            <span class="processing-point flex flex-col justify-center absolute top-[49%] left-[-4px] w-3.5 h-3.5 delay-500 duration-1000 rounded-full border-2 border-[#34d399] bg-[#464766]"
+                                  data-bs-placement="left"
+                                  data-bs-toggle="popover">
+                              <span
+                                    class="popover flex justify-center absolute right-6 before:content-[''] before:block before:absolute before:-right-1 before:top-2 before:w-2.5 before:h-2.5 before:bg-[#212529] before:rotate-45 w-[5.2rem] h-7 rounded-sm text-center text-white bg-[#212529]">پردازش</span>
+                            </span>
+                            <span class="delivery-point flex flex-col justify-center absolute -bottom-px left-[-4px] w-3.5 h-3.5 delay-500 duration-1000 rounded-full border-2 border-[#34d399] bg-[#464766]"
+                                  data-bs-placement="left"
+                                  data-bs-toggle="popover">
+                              <span
+                                    class="popover flex justify-center absolute right-6 before:content-[''] before:block before:absolute before:-right-1 before:top-2 before:w-2.5 before:h-2.5 before:bg-[#212529] before:rotate-45 w-[5.2rem] h-7 rounded-sm text-center text-white bg-[#212529]">تحویل
+                                پست</span>
+                            </span>
+                            <div
+                                 class="progress flex items-center w-full h-0 duration-1000 delay-500 mb-auto rounded-l bg-emerald-400">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                         class="max-sm:hidden flex flex-col justify-end items-center w-full h-4/5 p-2.5 rounded-3 bg-[#464766]">
+                      <div class="max-sm:hidden relative w-[31rem] h-1.5 bg-[rgba(255,255,255,0.1)]">
+                        <span class="flex flex-col items-center absolute -right-px top-[-3px] w-3.5 h-3.5 rounded-full border-2 border-[#34d399] bg-emerald-400"
+                              data-bs-placement="top"
+                              data-bs-toggle="popover"
+                              data-bs-trigger="hover">
+                          <span
+                                class="popover flex justify-center absolute bottom-6 before:content-[''] before:block before:absolute before:-bottom-1 before:w-2.5 before:h-2.5 before:bg-[#212529] before:rotate-45 w-20 h-7 rounded-sm text-center text-white bg-[#212529]">ثبت</span>
+                        </span>
+                        <span class="processing-point flex flex-col items-center absolute right-[49%] top-[-3px] w-3.5 h-3.5 delay-500 duration-1000 rounded-full border-2 border-[#34d399] bg-[#464766]"
+                              data-bs-placement="top"
+                              data-bs-toggle="popover"
+                              data-bs-trigger="hover">
+                          <span
+                                class="popover flex justify-center absolute bottom-6 before:content-[''] before:block before:absolute before:-bottom-1 before:w-2.5 before:h-2.5 before:bg-[#212529] before:rotate-45 w-20 h-7 rounded-sm text-center text-white bg-[#212529]">پردازش</span>
+                        </span>
+                        <span class="delivery-point flex flex-col items-center absolute -left-px top-[-3px] w-3.5 h-3.5 delay-500 duration-1000 rounded-full border-2 border-[#34d399] bg-[#464766]"
+                              data-bs-placement="top"
+                              data-bs-toggle="popover"
+                              data-bs-trigger="hover">
+                          <span
+                                class="popover flex justify-center absolute bottom-6 before:content-[''] before:block before:absolute before:-bottom-1 before:w-2.5 before:h-2.5 before:bg-[#212529] before:rotate-45 w-20 h-7 rounded-sm text-center text-white bg-[#212529]">تحویل
+                            پست</span>
+                        </span>
+                        <div
+                             class="progress flex items-center w-1/2 h-full duration-1000 delay-500 ml-auto rounded-l bg-emerald-400">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="max-sm:hidden w-full m-2 text-slate-50" />
+                </div>
+                <div class="flex flex-row max-sm:!flex-col max-sm:gap-2 w-full h-[65%] max-sm:h-[90%]">
+                  <div class="flex flex-col gap-3 w-[56%] max-sm:w-full h-full max-sm:h-3/4 p-1.5">
+                    <p class="text-white text-xl">اطلاعات سفارش</p>
+                    <ul
+                        class="h-full flex max-sm:grid flex-col justify-end max-sm:gap-[2px] sm:gap-3 grid-cols-2 grid-rows-3 sm:list-inside sm:list-disc max-sm:bg-slate-600">
+                      <li
+                          class="max-sm:flex flex-col justify-evenly items-center text-white text-sm max-sm:bg-[#1f2f4b]">
+                        کد سفارش :
+                        <a class="swiper-no-swiping">1232DRGR34</a>
+                      </li>
+                      <li
+                          class="max-sm:flex flex-col justify-evenly items-center text-white text-sm max-sm:bg-[#1f2f4b]">
+                        شماره پیگیری :
+                        <a class="swiper-no-swiping">2189883401382731</a>
+                      </li>
+                      <li
+                          class="max-sm:flex flex-col justify-evenly items-center text-white text-sm max-sm:bg-[#1f2f4b]">
+                        مبلغ کل :
+                        <a>900,000 تومان</a>
+                      </li>
+                      <li
+                          class="max-sm:flex flex-col justify-evenly items-center text-white text-sm max-sm:bg-[#1f2f4b]">
+                        تحویل گیرنده :
+                        <a>اقای صادقی</a>
+                      </li>
+                      <li
+                          class="sm:hidden max-sm:flex flex-col justify-evenly items-center text-white text-sm max-sm:bg-[#1f2f4b]">
+                        تاریخ ثبت سفارش :
+                        <a>1402 فروردین 15</a>
+                      </li>
+                      <li
+                          class="max-sm:flex flex-col justify-evenly items-center text-white text-sm max-sm:bg-[#1f2f4b]">
+                        پرداخت درب منزل
+                      </li>
+                    </ul>
+                    <div class="flex gap-4 swiper-no-swiping">
+                      <p class="cursor-pointer text-amber-400 text-sm z-40"
+                        href="#">
+                        <span class="d-inline-block ml-1" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover" data-bs-trigger="hover focus">
+                          <span class="popover"></span>
+                          <i class="bi bi-question-circle"></i>
+                        </span>
+                        تغیر ادرس
+                      </p>
+                      <p class="cursor-pointer text-red-500 text-sm z-40"
+                         href="#">
+                        لغو سفارش
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-1.5 w-[45%] max-sm:w-full h-[94%] max-sm:h-1/4 pt-1.5">
+                    <p class="text-white text-lg">مرسوله ها</p>
+                    <div
+                         class="flex flex-wrap justify-center items-start gap-2 max-sm:gap-8 w-full h-full overflow-auto">
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/watch11.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          2
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/phone.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصولی از dotf">
+                        <img src="./build/img/conteoller.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          2
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/watch.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/airpods.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/gaming-mouse.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          2
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/gaming-headset12.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide flex flex-col justify-start items-center w-full h-full">
+                <div class="flex flex-col justify-between max-sm:justify-evenly relative w-full h-[35%] max-sm:h-[10%]">
+                  <div class="max-sm:hidden flex flex-row items-start gap-4 w-full h-1/4">
+                    <p class="max-sm:hidden text-white text-sm">
+                      وضعیت ارسال:
+                    </p>
+                    <!-- <p class="max-sm:hidden text-white text-sm">ثبت سفارش</p> -->
+                    <!-- <p class="max-sm:hidden text-white text-sm">خروج از انبار</p> -->
+                    <p class="max-sm:hidden text-white text-sm">
+                      تحویل به اداره پست
+                    </p>
+                    <p class="max-sm:hidden text-white text-sm">
+                      <i class="bi bi-calendar4-event rotate-180 text-sm"></i>&nbsp;&nbsp;1402
+                      فروردین 17
+                    </p>
+                  </div>
+                  <div class="flex flex-row justify-center w-full h-3/5 max-sm:h-3/4">
+                    <div class="hidden max-sm:flex justify-center items-center w-full h-full p-2.5 rounded-3 bg-[#464766]"
+                         onclick="openPartsSidebar(this)">
+                      <p class="hidden max-sm:block text-white text-xl">
+                        مشاهده مراحل تحویل کالا
+                      </p>
+                    </div>
+                    <div class="hidden fixed w-full h-full backdrop-blur-[2px] z-50">
+                      <div class="w-9/12 h-full rounded-md bg-[#464766]">
+                        <div class="flex justify-between items-center h-[10%] border-b-2 px-2 border-gray-500">
+                          <h5 class="text-white">مراحل تحویل کالا</h5>
+                          <div class="text-white text-lg"
+                               onclick="closePartsSidebar(this)">
+                            <i class="bi bi-x-circle"></i>
+                          </div>
+                        </div>
+                        <div class="flex justify-center items-center h-[90%] p-2">
+                          <div class="w-1.5 h-[27rem] relative left-8 bg-[rgba(255,255,255,0.1)]">
+                            <span class="flex flex-col justify-center absolute -top-px left-[-4px] w-3.5 h-3.5 rounded-full border-2 border-[#34d399] bg-emerald-400"
+                                  data-bs-placement="left"
+                                  data-bs-toggle="popover">
+                              <span
+                                    class="popover flex justify-center absolute right-6 before:content-[''] before:block before:absolute before:-right-1 before:top-2 before:w-2.5 before:h-2.5 before:bg-[#212529] before:rotate-45 w-[5.2rem] h-7 rounded-sm text-center text-white bg-[#212529]">ثبت</span>
+                            </span>
+                            <span class="processing-point flex flex-col justify-center absolute top-[49%] left-[-4px] w-3.5 h-3.5 delay-500 duration-1000 rounded-full border-2 border-[#34d399] bg-[#464766]"
+                                  data-bs-placement="left"
+                                  data-bs-toggle="popover">
+                              <span
+                                    class="popover flex justify-center absolute right-6 before:content-[''] before:block before:absolute before:-right-1 before:top-2 before:w-2.5 before:h-2.5 before:bg-[#212529] before:rotate-45 w-[5.2rem] h-7 rounded-sm text-center text-white bg-[#212529]">پردازش</span>
+                            </span>
+                            <span class="delivery-point flex flex-col justify-center absolute -bottom-px left-[-4px] w-3.5 h-3.5 delay-500 duration-1000 rounded-full border-2 border-[#34d399] bg-[#464766]"
+                                  data-bs-placement="left"
+                                  data-bs-toggle="popover">
+                              <span
+                                    class="popover flex justify-center absolute right-6 before:content-[''] before:block before:absolute before:-right-1 before:top-2 before:w-2.5 before:h-2.5 before:bg-[#212529] before:rotate-45 w-[5.2rem] h-7 rounded-sm text-center text-white bg-[#212529]">تحویل
+                                پست</span>
+                            </span>
+                            <div
+                                 class="progress flex items-center w-full h-0 duration-1000 delay-500 mb-auto rounded-l bg-emerald-400">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                         class="max-sm:hidden flex flex-col justify-end items-center w-full h-4/5 p-2.5 rounded-3 bg-[#464766]">
+                      <div class="max-sm:hidden relative w-[31rem] h-1.5 bg-[rgba(255,255,255,0.1)]">
+                        <span class="flex flex-col items-center absolute -right-px top-[-3px] w-3.5 h-3.5 rounded-full border-2 border-[#34d399] bg-emerald-400"
+                              data-bs-placement="top"
+                              data-bs-toggle="popover"
+                              data-bs-trigger="hover">
+                          <span
+                                class="popover flex justify-center absolute bottom-6 before:content-[''] before:block before:absolute before:-bottom-1 before:w-2.5 before:h-2.5 before:bg-[#212529] before:rotate-45 w-20 h-7 rounded-sm text-center text-white bg-[#212529]">ثبت</span>
+                        </span>
+                        <span class="processing-point flex flex-col items-center absolute right-[49%] top-[-3px] w-3.5 h-3.5 delay-500 duration-1000 rounded-full border-2 border-[#34d399] bg-[#464766]"
+                              data-bs-placement="top"
+                              data-bs-toggle="popover"
+                              data-bs-trigger="hover">
+                          <span
+                                class="popover flex justify-center absolute bottom-6 before:content-[''] before:block before:absolute before:-bottom-1 before:w-2.5 before:h-2.5 before:bg-[#212529] before:rotate-45 w-20 h-7 rounded-sm text-center text-white bg-[#212529]">پردازش</span>
+                        </span>
+                        <span class="delivery-point flex flex-col items-center absolute -left-px top-[-3px] w-3.5 h-3.5 delay-500 duration-1000 rounded-full border-2 border-[#34d399] bg-[#464766]"
+                              data-bs-placement="top"
+                              data-bs-toggle="popover"
+                              data-bs-trigger="hover">
+                          <span
+                                class="popover flex justify-center absolute bottom-6 before:content-[''] before:block before:absolute before:-bottom-1 before:w-2.5 before:h-2.5 before:bg-[#212529] before:rotate-45 w-20 h-7 rounded-sm text-center text-white bg-[#212529]">تحویل
+                            پست</span>
+                        </span>
+                        <div
+                             class="progress flex items-center w-full h-full duration-1000 delay-500 ml-auto rounded-l bg-emerald-400">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="max-sm:hidden w-full m-2 text-slate-50" />
+                </div>
+                <div class="flex flex-row max-sm:!flex-col max-sm:gap-2 w-full h-[65%] max-sm:h-[90%]">
+                  <div class="flex flex-col gap-3 w-[56%] max-sm:w-full h-full max-sm:h-3/4 p-1.5">
+                    <p class="text-white text-xl">اطلاعات سفارش</p>
+                    <ul
+                        class="h-full flex max-sm:grid flex-col justify-end max-sm:gap-[2px] sm:gap-3 grid-cols-2 grid-rows-3 sm:list-inside sm:list-disc max-sm:bg-slate-600">
+                      <li
+                          class="max-sm:flex flex-col justify-evenly items-center text-white text-sm max-sm:bg-[#1f2f4b]">
+                        کد سفارش :
+                        <a class="swiper-no-swiping">1232DRGR34</a>
+                      </li>
+                      <li
+                          class="max-sm:flex flex-col justify-evenly items-center text-white text-sm max-sm:bg-[#1f2f4b]">
+                        شماره پیگیری :
+                        <a class="swiper-no-swiping">2189883401382731</a>
+                      </li>
+                      <li
+                          class="max-sm:flex flex-col justify-evenly items-center text-white text-sm max-sm:bg-[#1f2f4b]">
+                        مبلغ کل :
+                        <a>900,000 تومان</a>
+                      </li>
+                      <li
+                          class="max-sm:flex flex-col justify-evenly items-center text-white text-sm max-sm:bg-[#1f2f4b]">
+                        تحویل گیرنده :
+                        <a>اقای صادقی</a>
+                      </li>
+                      <li
+                          class="sm:hidden max-sm:flex flex-col justify-evenly items-center text-white text-sm max-sm:bg-[#1f2f4b]">
+                        تاریخ ثبت سفارش :
+                        <a>1402 فروردین 15</a>
+                      </li>
+                      <li
+                          class="max-sm:flex flex-col justify-evenly items-center text-white text-sm max-sm:bg-[#1f2f4b]">
+                        پرداخت درب منزل
+                      </li>
+                    </ul>
+                    <div class="flex gap-4">
+                      <!-- <p class="cursor-pointer text-amber-400 text-sm z-40"
+                        href="#">
+                        <span class="d-inline-block ml-1" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover" data-bs-trigger="hover focus">
+                          <span class="popover"></span>
+                          <i class="bi bi-question-circle"></i>
+                        </span>
+                        تغیر ادرس
+                      </p> -->
+                      <p class="cursor-pointer text-red-500 text-sm z-40"
+                         href="#">
+                        لغو سفارش
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-1.5 w-[45%] max-sm:w-full h-[94%] max-sm:h-1/4 pt-1.5">
+                    <p class="text-white text-lg">مرسوله ها</p>
+                    <div
+                         class="flex flex-wrap justify-center items-start gap-2 max-sm:gap-8 w-full h-full overflow-auto">
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/watch11.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          2
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/phone.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصولی از dotf">
+                        <img src="./build/img/conteoller.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          2
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/watch.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/airpods.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/gaming-mouse.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          2
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/gaming-headset12.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pagination -->
+            <div class="swiper-pagination !-bottom-2"></div>
+          </div>
+          <!-- end current products of orders section -->
+          <!-- start product-box -->
+          <!-- <img src="./build/img/not-exist.svg" alt=""> -->
+          <!-- <div class="product-box flex flex-col justify-evenly w-44 max-sm:w-40 max-[375px]:w-36 h-72 max-[375px]:h-64 m-0.5 float-left overflow-hidden rounded-4">
+                        <div class="box-bg flex justify-center items-center relative h-2/4">
+                            <img src="./build/img/conteoller.png" alt="" width="100%" draggable="false">
+                        </div>
+                        <div class="flex flex-col h-2/4 bg-[#474752]">
+                            <div class="flex flex-col justify-evenly items-center gap-2 w-full p-1.5 max-sm:p-[1.5rem_0.375rem_0.375rem_0.375rem]">
+                                <p class="text-white text-md max-[375px]:text-sm font-bold">ساعت مچی سیتیزن</p>
+                                <p class="max-sm:hidden text-white-50 text-sm max-[375px]:text-xs">لورم ایپسوم متن ساختگی با تولید سادگی</p>
+                            </div>
+                            <div class="flex max-sm:flex-col justify-between max-sm:justify-end items-center max-sm:gap-4 w-full h-full p-[0.75rem]">
+                                <p class="text-white-50 text-xs">900,000 تومان</p>
+                                <div class="flex gap-2">
+                                    <div class="basket flex justify-center items-center w-7 max-[375px]:w-7 h-7 max-[375px]:h-7 group duration-[0.25s] rounded-md cursor-pointer bg-[#40479E] hover:duration-[0.25s] hover:!bg-white" title="سبد خرید" draggable="false">
+                                        <i class="bi bi-cart3 h-5 group-hover:duration-[0.25s] group-hover:!text-[#7B74FF] text-white text-base max-[375px]:text-[15px] leading-6"></i>
+                                    </div>
+                                    <div class="save flex justify-center items-center w-7 max-[375px]:w-7 h-7 group duration-[0.25s] max-[375px]:h-7 rounded-md cursor-pointer bg-[#40479E] hover:duration-[0.25s] hover:!bg-white" title="حذف" draggable="false">
+                                        <i class="bi bi-bookmark h-5 duration-[0.25s] group-hover:duration-[0.25s] text-white group-hover:!text-[#7B74FF] text-base max-[375px]:text-[15px] leading-6"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+          <!-- end product-box -->
+          <!-- start delivered products of orders section -->
+          <div class="orders-pages hidden justify-center items-start w-full h-[86%] max-sm:h-[92%] overflow-auto"
+               id="delivered">
+            <div class="flex justify-center items-start flex-wrap gap-3 max-sm:gap-2.5 w-full h-full">
+              <div class="w-full h-3/4 border-2 border-slate-300 rounded">
+                <div class="w-full h-2/5 sm:border-b-2 border-white">
+                  <div class="flex p-3">
+                    <i class="bi bi-check-circle-fill inline-block h-7 ml-1 text-3xl text-green-300"></i>
+                    <p class="font-bold text-lg text-white mt-1">تحویل داده شده</p>
+                  </div>
+                  <div
+                      class="flex max-sm:flex-col justify-between items-center max-sm:items-start w-full max-sm:h-2/3 h-2/5 px-3 text-white">
+                    <div class="flex max-sm:justify-between justify-center w-full">
+                      کد سفارش :
+                      <a>1648ef85</a>
+                    </div>
+                    <div class="flex max-sm:justify-between justify-center w-full">
+                      <a class="sm:hidden">تاریخ :</a> 12 شهریور 1402
+                    </div>
+                    <div class="flex max-sm:justify-between justify-center w-full">
+                      قیمت:
+                      <a>26000<i>تومان</i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex max-sm:flex-col justify-between items-end w-full h-3/5 p-3">
+                  <div class="flex flex-col gap-1.5 w-1/2 max-sm:w-full h-full max-sm:h-5/6">
+                    <p class="text-white text-lg">مرسوله ها</p>
+                    <div
+                         class="flex flex-wrap justify-between max-sm:justify-center items-start gap-2 max-sm:gap-8 w-full h-full overflow-auto">
+                         <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                         title="محصول">
+                      <img src="./build/img/watch11.png"
+                           alt
+                           class="w-full h-full object-cover" />
+                      <div
+                           class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                        2
+                      </div>
+                    </div>
+                    <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                         title="محصول">
+                      <img src="./build/img/phone.png"
+                           alt
+                           class="w-full h-full object-cover" />
+                      <div
+                           class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                        1
+                      </div>
+                    </div>
+                    <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                         title="محصولی از dotf">
+                      <img src="./build/img/conteoller.png"
+                           alt
+                           class="w-full h-full object-cover" />
+                      <div
+                           class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                        2
+                      </div>
+                    </div>
+                    <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                         title="محصول">
+                      <img src="./build/img/watch.png"
+                           alt
+                           class="w-full h-full object-cover" />
+                      <div
+                           class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                        1
+                      </div>
+                    </div>
+                    <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                         title="محصول">
+                      <img src="./build/img/airpods.png"
+                           alt
+                           class="w-full h-full object-cover" />
+                      <div
+                           class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                        1
+                      </div>
+                    </div>
+                    <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                         title="محصول">
+                      <img src="./build/img/gaming-mouse.png"
+                           alt
+                           class="w-full h-full object-cover" />
+                      <div
+                           class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                        2
+                      </div>
+                    </div>
+                    <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                         title="محصول">
+                      <img src="./build/img/gaming-headset12.png"
+                           alt
+                           class="w-full h-full object-cover" />
+                      <div
+                           class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                        1
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <a href="./factor.html" title="درگوشی موبایل غیر فعال است">
+                    <p class="text-white">
+                      مشاهده فاکتور<i class="bi bi-chevron-left align-sub text-white"></i>
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="w-full h-3/4 border-2 border-slate-300 rounded">
+                <div class="w-full h-2/5 sm:border-b-2 border-white">
+                  <div class="flex p-3">
+                    <i class="bi bi-check-circle-fill inline-block h-7 ml-1 text-3xl text-green-300"></i>
+                    <p class="font-bold text-lg text-white mt-1">تحویل داده شده</p>
+                  </div>
+                  <div
+                      class="flex max-sm:flex-col justify-between items-center max-sm:items-start w-full max-sm:h-2/3 h-2/5 px-3 text-white">
+                    <div class="flex max-sm:justify-between justify-center w-full">
+                      کد سفارش :
+                      <a>1648ef85</a>
+                    </div>
+                    <div class="flex max-sm:justify-between justify-center w-full">
+                      <a class="sm:hidden">تاریخ :</a> 12 شهریور 1402
+                    </div>
+                    <div class="flex max-sm:justify-between justify-center w-full">
+                      قیمت:
+                      <a>26000<i>تومان</i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex max-sm:flex-col justify-between items-end w-full h-3/5 p-3">
+                  <div class="flex flex-col gap-1.5 w-1/2 max-sm:w-full h-full max-sm:h-5/6">
+                    <p class="text-white text-lg">مرسوله ها</p>
+                    <div
+                         class="flex flex-wrap justify-between max-sm:justify-center items-start gap-2 max-sm:gap-8 w-full h-full overflow-auto">
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/watch11.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          2
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/phone.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصولی از dotf">
+                        <img src="./build/img/conteoller.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          2
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/watch.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/airpods.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/gaming-mouse.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          2
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/gaming-headset12.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="./factor.html" title="درگوشی موبایل غیر فعال است">
+                    <p class="text-white">
+                      مشاهده فاکتور<i class="bi bi-chevron-left align-sub text-white"></i>
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end delivered products of orders section -->
+          <!-- start returned products of orders section -->
+          <div class="orders-pages hidden justify-center items-start w-full h-[86%] max-sm:h-[92%] overflow-auto"
+               id="returned">
+            <div class="flex justify-center items-start flex-wrap gap-3 max-sm:gap-2.5 w-full h-full">
+              <div class="w-full h-3/4 border-2 border-slate-300 rounded">
+                <div class="w-full h-2/5 max-sm:h-1/2 sm:border-b-2 border-white">
+                  <div class="flex p-3">
+                    <i class="bi bi-exclamation-circle-fill inline-block-block h-7 ml-1 text-3xl text-orange-200"></i>
+                    <p class="font-bold text-lg text-white mt-1">مرجوع شده</p>
+                  </div>
+                  <div
+                      class="flex max-sm:flex-col justify-between items-center max-sm:items-start w-full max-sm:h-2/3 h-2/5 px-3 text-white">
+                    <div class="flex max-sm:justify-between justify-center w-full">
+                      کد سفارش :
+                      <a>1648ef85</a>
+                    </div>
+                    <div class="flex max-sm:justify-between justify-center w-full">
+                      <a class="sm:hidden">تاریخ :</a> 12 شهریور 1402
+                    </div>
+                    <div class="flex max-sm:justify-between justify-center w-full">
+                      قیمت:
+                      <a>26000<i>تومان</i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex max-sm:flex-col justify-between items-end w-full h-3/5 p-3 max-sm:h-1/2">
+                  <div class="flex flex-col gap-1.5 w-full h-full">
+                    <p class="text-white text-lg">مرسوله ها</p>
+                    <div
+                         class="flex flex-wrap justify-between max-sm:justify-center items-start gap-2 max-sm:gap-8 w-full h-full overflow-auto">
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/watch11.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          2
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/phone.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصولی از dotf">
+                        <img src="./build/img/conteoller.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          2
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/watch.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/airpods.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/gaming-mouse.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          2
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/gaming-headset12.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full h-3/4 border-2 border-slate-300 rounded">
+                <div class="w-full h-2/5 max-sm:h-1/2 sm:border-b-2 border-white">
+                  <div class="flex p-3">
+                    <i class="bi bi-exclamation-circle-fill inline-block-block h-7 ml-1 text-3xl text-orange-200"></i>
+                    <p class="font-bold text-lg text-white mt-1">مرجوع شده</p>
+                  </div>
+                  <div
+                      class="flex max-sm:flex-col justify-between items-center max-sm:items-start w-full max-sm:h-2/3 h-2/5 px-3 text-white">
+                    <div class="flex max-sm:justify-between justify-center w-full">
+                      کد سفارش :
+                      <a>1648ef85</a>
+                    </div>
+                    <div class="flex max-sm:justify-between justify-center w-full">
+                      <a class="sm:hidden">تاریخ :</a> 12 شهریور 1402
+                    </div>
+                    <div class="flex max-sm:justify-between justify-center w-full">
+                      قیمت:
+                      <a>26000<i>تومان</i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex max-sm:flex-col justify-between items-end w-full h-3/5 p-3 max-sm:h-1/2">
+                  <div class="flex flex-col gap-1.5 w-full h-full">
+                    <p class="text-white text-lg">مرسوله ها</p>
+                    <div
+                         class="flex flex-wrap justify-between max-sm:justify-center items-start gap-2 max-sm:gap-8 w-full h-full overflow-auto">
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/watch11.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          2
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/phone.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصولی از dotf">
+                        <img src="./build/img/conteoller.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          2
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/watch.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/airpods.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/gaming-mouse.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          2
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/gaming-headset12.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end returned products of orders section -->
+          <!-- start canceled products of orders section -->
+          <div class="orders-pages hidden justify-center items-start w-full h-[86%] max-sm:h-[92%] overflow-auto"
+               id="Canceled">
+            <div class="flex justify-center items-start flex-wrap gap-3 max-sm:gap-2.5 w-full h-full">
+              <div class="w-full h-3/4 border-2 border-slate-300 rounded">
+                <div class="w-full h-2/5 max-sm:h-1/2 sm:border-b-2 border-white">
+                  <div class="flex p-3">
+                    <i class="bi bi-x-circle inline-block-block h-7 ml-1 text-3xl text-red-400"></i>
+                    <p class="font-bold text-lg text-white mt-1">لغو شده</p>
+                  </div>
+                  <div
+                      class="flex max-sm:flex-col justify-between items-center max-sm:items-start w-full max-sm:h-2/3 h-2/5 px-3 text-white">
+                    <div class="flex max-sm:justify-between justify-center w-full">
+                      کد سفارش :
+                      <a>1648ef85</a>
+                    </div>
+                    <div class="flex max-sm:justify-between justify-center w-full">
+                      <a class="sm:hidden">تاریخ :</a> 12 شهریور 1402
+                    </div>
+                    <div class="flex max-sm:justify-between justify-center w-full">
+                      قیمت:
+                      <a>26000<i>تومان</i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex max-sm:flex-col justify-between items-end w-full h-3/5 p-3 max-sm:h-1/2">
+                  <div class="flex flex-col gap-1.5 w-full h-full">
+                    <p class="text-white text-lg">مرسوله ها</p>
+                    <div
+                         class="flex flex-wrap justify-between max-sm:justify-center items-start gap-2 max-sm:gap-8 w-full h-full overflow-auto">
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/watch11.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          2
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/phone.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصولی از dotf">
+                        <img src="./build/img/conteoller.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          2
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/watch.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/airpods.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/gaming-mouse.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          2
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/gaming-headset12.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full h-3/4 border-2 border-slate-300 rounded">
+                <div class="w-full h-2/5 max-sm:h-1/2 sm:border-b-2 border-white">
+                  <div class="flex p-3">
+                    <i class="bi bi-x-circle inline-block-block h-7 ml-1 text-3xl text-red-400"></i>
+                    <p class="font-bold text-lg text-white mt-1">لغو شده</p>
+                  </div>
+                  <div
+                      class="flex max-sm:flex-col justify-between items-center max-sm:items-start w-full max-sm:h-2/3 h-2/5 px-3 text-white">
+                    <div class="flex max-sm:justify-between justify-center w-full">
+                      کد سفارش :
+                      <a>1648ef85</a>
+                    </div>
+                    <div class="flex max-sm:justify-between justify-center w-full">
+                      <a class="sm:hidden">تاریخ :</a> 12 شهریور 1402
+                    </div>
+                    <div class="flex max-sm:justify-between justify-center w-full">
+                      قیمت:
+                      <a>26000<i>تومان</i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex max-sm:flex-col justify-between items-end w-full h-3/5 p-3 max-sm:h-1/2">
+                  <div class="flex flex-col gap-1.5 w-full h-full">
+                    <p class="text-white text-lg">مرسوله ها</p>
+                    <div
+                         class="flex flex-wrap justify-between max-sm:justify-center items-start gap-2 max-sm:gap-8 w-full h-full overflow-auto">
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/watch11.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          2
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/phone.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصولی از dotf">
+                        <img src="./build/img/conteoller.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          2
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/watch.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/airpods.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/gaming-mouse.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          2
+                        </div>
+                      </div>
+                      <div class="relative w-20 max-sm:w-16 h-20 max-sm:h-16 cursor-pointer overflow-hidden rounded-3 bg-slate-200"
+                           title="محصول">
+                        <img src="./build/img/gaming-headset12.png"
+                             alt
+                             class="w-full h-full object-cover" />
+                        <div
+                             class="absolute bottom-0 right-0 w-5 h-5 rounded-[61%_/_50%_0_0] text-center text-sm text-white bg-[#848484]">
+                          1
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end canceled products of orders section -->
+        </div>
+        <!-- pagination -->
+        <!-- <div class="swiper-pagination !bottom-[68px]"></div> -->
+      </div>
+    </section>
+    <!-- end orders section -->
+    <a href="#back"
+       class="flex absolute left-4 top-4 cursor-pointer text-white text-sm">بازگشت<i
+         class="bi bi-arrow-left-short text-xl"></i></a>
+  </div>
+  <!-- <div
+        class="notice flex justify-evenly items-center fixed top-5 right-3 w-64 h-16 rounded-2 shadow bg-white z-10">
+        <i class="bi bi-exclamation-circle h-[30px] text-3xl text-warning"></i>
+        <i class="bi bi-check-circle-fill h-7 text-3xl text-green-300"></i>
+        <p>تحویل داده شده</p>
+    </div> -->
+  <!-- reference swiper.js file -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- reference script.js file -->
+  <script src="./build/js/script.js"></script>
+  <!-- reference bootstrap@5.3.0 bundle javascript file -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

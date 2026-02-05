@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="fa"
+      dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+  <!-- reference bootstrap icons cdn -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <!-- reference tailwindcss@3.3.2 cdn link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- reference tailwindcss@3.3.2 -->
+  <link rel="stylesheet"
+        href="./build/css/output.css" />
+  <!-- reference bootstrap@5.3.0 rtl style link-->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o"
+        crossorigin="anonymous" />
+  <!-- reference vazir font cdn -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css"
+        rel="stylesheet"
+        type="text/css" />
+  <!-- set favicon -->
+  <link rel="shortcut icon"
+        href="build/img/logo.png"
+        type="image/svg" />
+  <!-- set title bar -->
+  <title>فاکتور نیابتی</title>
+</head>
+
+<body class="flex flex-col justify-center items-center h-screen max-lg:hidden overflow-auto bg-[#292935]">
+  <header
+          class="flex justify-center items-center w-full h-[10%] border-b-2 border-color-white font-bold text-lg text-white">
+    صورت حساب الکترونیکی فروش
+  </header>
+  <main class="flex flex-col justify-between items-center gap-2 w-full h-[90%] p-4">
+    <section class="flex flex-col gap-1.5 w-full h-2/5">
+      <div class="flex justify-between items-center gap-2 w-full h-1/2">
+        <div class="flex justify-center items-center w-[10%] h-full bg-[#424669]">
+          <div class="-rotate-90 font-semibold text-lg text-white">
+            فروشنده
+          </div>
+        </div>
+        <div class="flex flex-col w-3/4 h-full bg-[#424669]">
+          <div class="flex w-full h-1/2 px-3">
+            <div class="flex items-center w-1/2 h-full font-medium text-white">
+              <a class="font-bold text-lg ml-1">فروشنده:</a>شرکت digikala
+            </div>
+            <div class="flex items-center w-1/2 h-full font-medium text-white">
+              <a class="font-bold text-lg ml-1">کد پستی:</a>55889462
+            </div>
+          </div>
+          <div class="flex w-full h-1/2 px-3">
+            <div class="flex items-center w-1/2 h-full font-medium text-white">
+              <a class="font-bold text-lg ml-1">نشانی:</a>آذربایجان شرقی 
+            </div>
+            <div class="flex items-center w-1/2 h-full font-medium text-white">
+              <a class="font-bold text-lg ml-1">تلفن:</a>37000000
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col justify-evenly w-3/12 h-full px-3 bg-[#424669]">
+          <div class="flex items-center w-full font-medium text-white">
+            <a class="font-bold text-lg ml-1">شماره فاکتور:</a>128479
+          </div>
+          <div class="flex items-center w-full font-medium text-white">
+            <a class="font-bold text-lg ml-1">تاریخ:</a>1405/11/29
+          </div>
+          <div class="flex items-center w-full font-medium text-white">
+            <a class="font-bold text-lg ml-1">شماره پیگیری:</a>9966753
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-between items-center gap-2 w-full h-1/2">
+        <div class="flex justify-center items-center w-[10%] h-full bg-[#424669]">
+          <div class="-rotate-90 font-semibold text-lg text-white">
+            خریدار
+          </div>
+        </div>
+        <div class="flex flex-col w-3/4 h-full bg-[#424669]">
+          <div class="flex w-full h-1/2 px-3">
+            <div class="flex items-center w-1/2 h-full font-medium text-white">
+              <a class="font-bold text-lg ml-1">خریدار:</a>امیرحسین صادقی
+            </div>
+            <div class="flex items-center w-1/2 h-full font-medium text-white">
+              <a class="font-bold text-lg ml-1">کد پستی:</a>5551760067
+            </div>
+          </div>
+          <div class="flex w-full h-1/2 px-3">
+            <div class="flex items-center w-1/2 h-full font-medium text-white">
+              <a class="font-bold text-lg ml-1">نشانی:</a>تهران، خیابان انقلاب، خیابان 16 آذر، پلاک 10
+            </div>
+            <div class="flex items-center w-1/2 h-full font-medium text-white">
+              <a class="font-bold text-lg ml-1">شناسه ملی:</a>1540769350
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col justify-evenly w-3/12 h-full px-3 bg-[#424669]">
+          <div class="flex items-center w-full font-medium text-white">
+            <a class="font-bold text-lg ml-1">شماره تماس:</a>09365558838
+          </div>
+          <div class="flex items-center w-full font-medium text-white">
+            <a class="font-bold text-lg ml-1">شماره ثبت:</a>- 
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full h-3/5 bg-[#424669]">
+      <table class="w-full h-full border-2 border-slate-300 border-collapse">
+        <tr rowspan="2">
+          <th class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-bold text-white">ردیف</p>
+          </th>
+          <th class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-bold text-white">
+              شناسه کالا یا خدمت
+            </p>
+          </th>
+          <th colspan="3"
+              class="border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-bold text-white">
+              شرح کالا یا خدمت
+            </p>
+          </th>
+          <th class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-bold text-white">تعداد</p>
+          </th>
+          <th class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-bold text-white">
+              مبلغ واحد (ريال)
+            </p>
+          </th>
+          <th class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-bold text-white">مبلغ کل (ريال)</p>
+          </th>
+          <th class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-bold text-white">تخفیف (ريال)</p>
+          </th>
+          <th class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-bold text-white">
+              مبلغ کل پس از تخفیف (ريال)
+            </p>
+          </th>
+          <th class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-bold text-white">
+              جمع مالیات و عوارض ارزش افزوده(ریال)
+            </p>
+          </th>
+          <th class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-bold text-white">
+              جمع کل پس از تخفیف و مالیات و عوارض(ریال)
+            </p>
+          </th>
+        </tr>
+        <tr class="h-[12.5%]">
+          <td class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-medium text-white">1</p>
+          </td>
+          <td class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-medium text-white">187258</p>
+          </td>
+          <td colspan="3"
+              class="border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-medium text-white">
+              هدفون و ایرپاد بلوتوثی مدل Apple(مشکی)
+            </p>
+          </td>
+          <td class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-medium text-white">1</p>
+          </td>
+          <td class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-medium text-white">1585000</p>
+          </td>
+          <td class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-medium text-white">1585000</p>
+          </td>
+          <td class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-medium text-white">0</p>
+          </td>
+          <td class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-medium text-white">1585000</p>
+          </td>
+          <td class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-medium text-white">0</p>
+          </td>
+          <td class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-medium text-white">1585000</p>
+          </td>
+        </tr>
+        <tr class="h-[12.5%]">
+          <td colspan="5"
+              class="border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-medium text-white">جمع کل</p>
+          </td>
+          <td class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-medium text-white">1</p>
+          </td>
+          <td class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-medium text-white">1585000</p>
+          </td>
+          <td class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-medium text-white">1585000</p>
+          </td>
+          <td class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-medium text-white">0</p>
+          </td>
+          <td class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-medium text-white">1585000</p>
+          </td>
+          <td class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-medium text-white">0</p>
+          </td>
+          <td class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-medium text-white">1585000</p>
+          </td>
+        </tr>
+        <tr class="h-[12.5%]">
+          <td colspan="7"
+              class="border-2 border-slate-300 border-collapse"></td>
+          <td colspan="4"
+              class="border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-bold text-white">
+              جمع کل پس از کسر تخفیف با احتساب مالیات و عوارض(ریال):
+            </p>
+          </td>
+          <td class="w-1/12 border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-medium text-white">1585000</p>
+          </td>
+        </tr>
+        <tr class="h-[12.5%]">
+          <td colspan="5"
+              class="border-2 border-slate-300 border-collapse">
+            <p class="text-center align-middle font-medium text-white">
+              اعتبار مالیاتی قابل استفاده توسط خریدار
+            </p>
+          </td>
+          <td colspan="7"
+              class="border-2 border-slate-300 border-collapse"></td>
+        </tr>
+        <tr class="h-[12.5%]">
+          <td colspan="2">
+            <p class="text-center align-middle font-medium text-white">
+              مهر و امضاء فروشنده :
+            </p>
+          </td>
+          <td colspan="3">
+            <p class="text-center align-middle font-medium text-white">
+              تاریخ تحویل <i class="text-center align-middle font-medium text-white">1400 فروردین 12</i>
+            </p>
+          </td>
+          <td colspan="2"><i class="text-center align-middle font-medium text-white">
+              ساعت تحویل <i class="text-center align-middle font-medium text-white">23-10</i>
+              </p>
+          </td>
+          <td colspan="3"><i class="text-center align-middle font-medium text-white">
+              روش های پرداخت : <i class="text-center align-middle font-medium text-white">نقدی : 18,35,000</i>
+              </p>
+          </td>
+        </tr>
+        <tr rowspan="2">
+          <td colspan="2">
+            <div class="flex w-full h-full justify-around items-center pl-2">
+              <img src="./build/img/signature.png"
+                   class="mr-2"
+                   alt="امضاء"
+                   title="امضاء">
+          </td>
+          </div>
+          <td colspan="6"></td>
+          <td colspan="4">
+            <div class="flex w-full h-full justify-around items-center pl-2">
+              <p class="text-center align-middle font-medium text-white">مهر و امضای خریدار :</p>
+              <img src="./build/img/tax.png"
+                   alt="مهر مالیات"
+                   title="مهر مالیات">
+              <img src="./build/img/QR-SVG.png"
+                   alt="بارکد"
+                   title="بارکد">
+            </div>
+          </td>
+        </tr>
+      </table>
+    </section>
+  </main>
+  <!-- reference script.js file -->
+  <script src="./build/js/script.js"></script>
+  <!-- reference bootstrap@5.3.0 bundle javascript file -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

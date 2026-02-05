@@ -1,0 +1,17 @@
+@media (max-height: 700px) {
+    body {
+        height: initial !important;
+    }
+
+    body > div {
+        height: 700px !important; 
+    }
+}
+
+@media (max-width: 640px) {
+    @media (max-height: 700px) {
+        body > div {
+            height: 1060px !important; 
+        }
+    }
+}
